@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    display: flex;
+    margin: 0;
+    font-family: Montserrat;
+    box-sizing: border-box;
+
+    #image {
+        display: flex;
+        flex-direction: column;
+        background-image: url(./imgs/halie-west-25xggax4bSA-unsplash.jpg);
+        background-size: contain;
+        width: 640px;
+        height: 100vh;
+        color: white;
+        align-items: center;
+            
+
+        #logo {
+            display: flex;
+            align-items: center;
+            background-color: black;
+            opacity: .75;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 8rem;
+            width: 100%;
+            font-size: 2rem;
+        }
+
+            img {
+                height: 100px;
+            }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+        }
+    }
+
+    #half-container {
+        display: flex;
+        flex-direction: column;
+
+
+        #mission-statement {
+            margin: 8rem 5rem 2rem 5rem;
+            font-weight: bold;
+        }
+
+        form {
+            box-shadow: 0 0 4px black;
+            padding: 0 0 .5rem 5rem;
+
+            h2 {
+                margin-bottom: 2.5rem;
+            }
+
+            label {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2rem;
+                font-weight: bold;
+                font-size: .85rem;
+                letter-spacing: 1px;
+            }
+        }
+
+        #form-container {
+            display: flex;
+            gap: 6rem;
+
+            section {
+
+
+                input {
+                    width: 300px;
+                    height: 25px;
+                    padding: 4px 6px;
+                    font-size: 1rem;
+                    border: 1px solid gray;
+                }
+                
+                input:focus {
+                    border: 2px solid blue;
+                    box-shadow: 0 0 2px black;
+                }
+                
+                input:valid {
+                    border: 2px solid rgb(29, 98, 29); 
+                }
+                
+                input:invalid {
+                    border: 2px solid red; 
+                }
+                
+            }
+            
+        }
+
+        button {
+            font-family: inherit;
+            background-color: rgb(28, 145, 28);
+            font-weight: bold;
+            padding: .8rem 1rem;
+            width: 200px;
+            border: none;
+            border-radius: .5rem;
+            color: white;
+            margin: 1rem 5rem;
+        }
+
+        #login-msg {
+            margin-left: 5rem;
+            
+            a {
+                text-decoration: none;
+                color: rgb(28, 145, 28);
+                font-weight: bold;
+            }
+        }
+
+    }
+
+
+
+}
+

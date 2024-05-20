@@ -7,26 +7,29 @@
     <title>Sign Up Form</title>
 </head>
 <body>
-    <main>
-        <div id="image">
-            <div id="opacity-background">
-                <div id="header-container">
-                    <img src="./imgs/odin-logo.png" alt="TOP logo">
-                    <h1>ODIN</h1>
-                </div>
-                <footer>Phto by <a href="">Halie West</a> on <a href="Unsplash"></a></footer>
+    <div id="image">
+            <div id="logo">
+                <img src="./imgs/odin-logo.png" alt="TOP logo">
+                <h1>ODIN</h1>
             </div>
-        </div>
+            <footer>Photo by <a href="">Halie West</a> on <a href="">Unsplash</a></footer>
+    </div>
 
+    <div id="half-container">
         <p id="mission-statement">
             This is not a real online server! You know you need something like this in your 
             life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+            <br>
             <br>
             You <em>know</em> you want to.
         </p>
         <form action="" method="POST">
             <h2>Let's do this!</h2>
-            <section id="left-side">
+
+            <div id="form-container">
+
+            <section>
+            
                 <label for="first-name">
                     FIRST NAME
                     <input type="text" name="first-name" id="first-name">
@@ -43,14 +46,14 @@
                 </label>
             </section>
 
-            <section id="right-side">
+            <section>
                 <label for="last-name">
                     LAST NAME
                     <input type="text" name="last-name" id="last-name">
                 </label>
 
                 <label for="phone-number">
-                    EMAIL
+                    PHONE NUMBER
                     <input type="number" name="phone-number" id="phone-number">
                 </label>
 
@@ -59,10 +62,12 @@
                     <input type="password" name="confirm-pass" id="confirm-pass">
                 </label>
             </section>
+
+            </div>
         </form>
 
-        <button>Create Account</button>
-        <p>Already have an account? <a href="">Log in</a></p>
-    </main>
+        <button type="submit">Create Account</button>
+        <p id="login-msg">Already have an account? <a href="">Log in</a></p>
+    </div>
 </body>
 </html>
